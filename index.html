@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cipők</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family:
+          "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        box-sizing: border-box;
+      }
+      p {
+        line-height: 1.4;
+        padding: 10px;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        background-color: gold;
+      }
+      nav {
+        display: flex;
+        background-color: gold;
+        margin: 10px;
+      }
+      main {
+        background-color: white;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+      }
+      h1 {
+        text-align: center;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        margin: 10px;
+      }
+      nav {
+        padding: 15px;
+      }
+      section {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+      }
+      .card {
+        border: 1px rgb(182, 182, 182) solid;
+        border-radius: 5px;
+        width: 300px;
+        padding: 0 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+      }
+      img {
+        width: 275px;
+      }
+      .card a {
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: gold;
+      }
+      h3 {
+        align-self: flex-start;
+        font-weight: 500;
+      }
+      @media (max-width: 430px) {
+        nav {
+          flex-direction: column;
+        }
+        main {
+          width: 100%;
+          margin: 0;
+          margin-top: 5px;
+        }
+        .card {
+          width: 100%;
+        }
+        img {
+          width: 100%;
+        }
+        .card > a {
+          align-self: flex-start;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <a
+          href="https://ecipo.hu/c/noi?itm_source=ovm&itm_medium=menu_navbar&itm_campaign=damskie"
+          >Női Cipők</a
+        ><a
+          href="https://ecipo.hu/c/ferfi?itm_source=ovm&itm_medium=menu_navbar&itm_campaign=meskie"
+          >Férfi Cipők</a
+        ><a
+          href="https://ecipo.hu/c/ecipo/akcja:special_offer_lp/omnibus_discount:~r-5-99?itm_source=ovm&itm_medium=menu_navbar&itm_campaign=special_offer"
+          >Akciók</a
+        >
+      </nav>
+      <h1>Cipőt a cipőboltból</h1>
+      <p>
+        A cipő a lábbelik egyik fajtája. Alapvető feladata az emberi láb védelme
+        a külvilág hatásaival szemben. A cipőknek meglehetősen sok változata
+        alakult ki a rendeltetésük és a viselő társadalmi szerepének
+        függvényében. Talpuk lehet sima, alacsony vagy magas sarkú – az utóbbit
+        a nyugati társadalmak a nőies öltözködés egyik jelképének tartják –,
+        készülhetnek bőrből vagy textíliából is, valamint pl. az edzőcipők
+        lehetnek műanyagból.
+      </p>
+      <section>
+        <div class="card">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Soft_moccasin.jpg/375px-Soft_moccasin.jpg"
+            alt="Mokaszin"
+          />
+          <h3>Mokaszin</h3>
+          <p>
+            A mokaszin az amerikai őslakosok szarvas-, esetleg más puha bőrből
+            készült lábbelije.
+          </p>
+          <a href="https://hu.wikipedia.org/wiki/Mokaszin"> Wikipedia </a>
+        </div>
+        <div class="card">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Fieldboots.jpg/220px-Fieldboots.jpg"
+            alt="Csizma"
+          />
+          <h3>Csizma</h3>
+          <p>A csizma hosszúszárú lábbeli. Külön speciálitás a női csizma.</p>
+          <a href="https://hu.wikipedia.org/wiki/Csizma">Wikipedia</a>
+        </div>
+        <div class="card">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/%D0%9E%D0%B1%D1%83%D0%B2%D1%8C.jpg/220px-%D0%9E%D0%B1%D1%83%D0%B2%D1%8C.jpg"
+            alt="Edzőcipő"
+          />
+          <h3>Edzőcipő</h3>
+          <p>
+            Az edzőcipő (vagy sportcipő) azoknak a cipőknek az általános
+            elnevezése.
+          </p>
+          <a href="https://hu.wikipedia.org/wiki/Edz%C5%91cip%C5%91">
+            Wikipedia
+          </a>
+        </div>
+        <div class="card">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/5/5a/D%C3%BCrer_Hohepriester_Detail.png"
+            alt="Papucs"
+          />
+          <h3>Papucs</h3>
+          <p>A papucs a talpat és a lábfejet védő lábbeli.</p>
+          <a href="https://hu.wikipedia.org/wiki/Papucs">See Wikipedia</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
